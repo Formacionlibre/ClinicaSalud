@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">MbSalud</string>
+
+    <string name="url_servidor">http://192.168.1.36/hospital2/api.php</string>
+
+    <string name="arbol">arbol con raices</string>
+    <string name="titulo">ClinicaSalud</string>
+    <string name="mensaje_titulo">Tu salud al dia</string>
+    <string name="dni">Introduce tu DNI</string>
+    <string name="contraseña">Introduce contraseña de acceso</string>
+    <string name="entrar">ENTRAR</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellidos">Apellidos</string>
+    <string name="fecha_de_nacimiento">Fecha de Nacimiento</string>
+    <string name="tipo_documento">Tipo de documento de identidad</string>
+    <string name="mutua">Mutua</string>
+    <string name="n_mero_de_identificaci_n">Número de identificación</string>
+    <string name="email">Correo electrónico</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="registrar">Registrar</string>
+    <string name="datos_personales">DATOS PERSONALES</string>
+    <string name="politica_privacidad">He leído y acepto la política de privacidad.</string>
+
+    <string name="preferencias">PREFERENCIAS</string>
+
+    <string name="modo_editar">EDITAR</string>
+    <string name="modo_registro">REGISTRAR</string>
+
+    <string-array name="tipos_documento">
+        <item>DNI</item>
+        <item>Pasaporte</item>
+    </string-array>
+
+</resources>

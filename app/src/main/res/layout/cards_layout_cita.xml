@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:tag="cards main container">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="10dp"
+        card_view:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true">
+        <!---card_view:cardBackgroundColor="@color/cardview_shadow_end_color"-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <TextView
+                android:id="@+id/tvFechaNombre"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="40"
+                android:text="00:00 Apellidos Nombre "
+                android:textSize="16dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="60"
+                android:orientation="horizontal"
+                android:weightSum="99">
+
+                <ImageView
+                    android:id="@+id/btnVerCita"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"
+                    android:src="@drawable/ver" />
+
+
+
+                <ImageView
+                    android:id="@+id/btnEditarCita"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"
+                    android:src="@drawable/boligrafo"/>
+
+                <ImageView
+                    android:id="@+id/btnEliminarCita"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="33"
+                    android:src="@drawable/goma" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

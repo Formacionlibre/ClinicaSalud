@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AnadirCitaActivity"
+    android:weightSum="100"
+    android:orientation="vertical"
+    android:background="@drawable/gradiente1">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="15"
+        android:gravity="center|center_horizontal"
+        android:text="PEDIR CITA PACIENTE"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5"
+        android:gravity="left"
+        android:text="Seleccionar paciente:"
+        android:textColor="@color/colorTexto2"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="12"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spPaciente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="18"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+
+        <EditText
+            android:id="@+id/tvDesde"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:textColor="@color/colorTexto2"
+            app:srcCompat="@drawable/mensual"
+            tools:text="Fecha de inicio" />
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+
+
+        <ImageView
+            android:id="@+id/ivDesde"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            app:srcCompat="@drawable/mensual" />
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="18"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+
+        <EditText
+            android:id="@+id/tvHasta"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="50"
+            android:textColor="@color/colorTexto2"
+            app:srcCompat="@drawable/mensual"
+            tools:text="Fecha de final" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+        <ImageView
+            android:id="@+id/ivHasta"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            app:srcCompat="@drawable/mensual" />
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="6"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/ivAtras"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="60" />
+
+        <ImageView
+            android:id="@+id/ivAdelante"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:onClick="adelante"
+            app:srcCompat="@drawable/adelante" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

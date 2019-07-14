@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".activity.PedirCitaActivity"
+    android:background="@drawable/gradient">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="15"
+        android:gravity="center|center_horizontal"
+        android:text="PEDIR CITA"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="6" />
+
+        <Spinner
+            android:id="@+id/spEspecialidad"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="41"
+            android:theme="@style/spinnerTheme" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="6" />
+
+        <Spinner
+            android:id="@+id/spEspecialista"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="41" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="6" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="15" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="70"
+            android:gravity="center|center_vertical"
+            android:text="FECHA: Seleccione un rango"
+            android:textColor="@color/colorTexto2"
+            android:textSize="17sp" />
+
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="15" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="15"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="22" />
+
+        <ImageView
+            android:id="@+id/ivDesde"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="17"
+            app:srcCompat="@drawable/mensual" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="24" />
+
+        <ImageView
+            android:id="@+id/ivHasta"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="17"
+            app:srcCompat="@drawable/mensual" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="22" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="18" />
+
+        <EditText
+            android:id="@+id/txtDesde"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="22"
+            android:hint="Fecha inicio"
+            android:textColor="@color/colorTexto2"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20" />
+
+        <EditText
+            android:id="@+id/txtHasta"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="22"
+            android:hint="Fecha final"
+            android:textColor="@color/colorTexto2"
+            android:textSize="13dp" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="14" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="20"
+        android:orientation="horizontal"
+        android:weightSum="100" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="8"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="80" />
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:onClick="verDisponibilidad"
+            android:src="@drawable/adelante" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".activity.PacienteActivity"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="25"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+        <Button
+            android:id="@+id/citas"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="32"
+            android:background="@drawable/miscitas"
+            android:onClick="clickPedirCita" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+
+        <Button
+            android:id="@+id/miscitas"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="32"
+            android:onClick="clickVerMisCitas"
+            android:background="@drawable/citas" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="32"
+            android:text="Pedir cita"
+            android:textStyle="bold"
+            android:gravity="center|center_vertical"
+            android:textColor="@color/colorTexto2"/>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="32"
+            android:gravity="center|center_vertical"
+            android:text="Ver mis citas"
+            android:textColor="@color/colorTexto2"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="25"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+        <Button
+            android:id="@+id/historial"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="32"
+            android:onClick="clickVerHistorial"
+            android:background="@drawable/historial" />
+
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+        <Button
+            android:id="@+id/especialista"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="32"
+            android:onClick="clickVerCuadroMedico"
+            android:background="@drawable/estetoscopio" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="32"
+            android:gravity="center|center_vertical"
+            android:text="Historial"
+            android:textColor="@color/colorTexto2"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="32"
+            android:gravity="center|center_vertical"
+            android:text="Cuadro médico"
+            android:textColor="@color/colorTexto2"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="25"
+        android:gravity="center|center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+        <Button
+            android:id="@+id/misdatos"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="32"
+            android:background="@drawable/mujer"
+            android:onClick="clickEditarDatos" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+
+        <Button
+            android:id="@+id/contacto"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="32"
+            android:background="@drawable/contacto"
+            android:onClick="clickContacto" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="5"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="32"
+            android:gravity="center|center_vertical"
+            android:text="Mis datos"
+            android:textColor="@color/colorTexto2"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="32"
+            android:gravity="center|center_vertical"
+            android:text="Contacto"
+            android:textColor="@color/colorTexto2"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="12" />
+    </LinearLayout>
+
+
+</LinearLayout>

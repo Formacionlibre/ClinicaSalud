@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PacientesEspecialistaActivity"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="@drawable/gradiente1">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="15"
+        android:gravity="center|center_horizontal"
+        android:text="VER PACIENTES"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="10"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Spinner
+            android:id="@+id/spPacientes"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="50" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="10" />
+
+        <Button
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="30"
+            android:background="@drawable/boton5"
+            android:onClick="verHistorialPaciente"
+            android:text="Ver pacientes"
+            android:textColor="@color/colorTexto2"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
